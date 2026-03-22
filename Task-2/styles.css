@@ -1,0 +1,77 @@
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Center main content */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+/* Calculator container */
+.container {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 10px;
+}
+
+/* Display */
+#display {
+    grid-column: span 4;
+    height: 50px;
+    font-size: 20px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Buttons */
+button {
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #777;
+}   
