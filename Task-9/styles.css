@@ -1,0 +1,53 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f7fb;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Title */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Content container */
+#content {
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Each card */
+.card {
+    background: white;
+    padding: 25px;
+    margin: 15px 0;
+    border-radius: 12px;
+
+    /* Bigger text */
+    font-size: 20px;
+    font-weight: 500;
+    color: #222;
+
+    /* Shadow for depth */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    /* Smooth hover effect */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Loading text */
+#loading {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin: 20px 0;
+    display: none;
+}
