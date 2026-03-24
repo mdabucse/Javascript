@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag and Drop List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>My Task List</h1>
+    <p class="subtitle">Drag items to reorder</p>
+    
+    <ul class="list" id="list">
+      <li class="list-item" draggable="true">
+        <span class="number">1</span>
+        <span class="text">Complete homework</span>
+      </li>
+      <li class="list-item" draggable="true">
+        <span class="number">2</span>
+        <span class="text">Read a book</span>
+      </li>
+      <li class="list-item" draggable="true">
+        <span class="number">3</span>
+        <span class="text">Go for a walk</span>
+      </li>
+      <li class="list-item" draggable="true">
+        <span class="number">4</span>
+        <span class="text">Cook dinner</span>
+      </li>
+      <li class="list-item" draggable="true">
+        <span class="number">5</span>
+        <span class="text">Watch a movie</span>
+      </li>
+    </ul>
+
+    <button id="resetBtn">Reset Order</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
