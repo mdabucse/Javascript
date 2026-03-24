@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>My Store</h1>
+
+        <div class="search-filter">
+            <input type="text" id="searchInput" placeholder="Search products...">
+            
+            <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="clothing">Clothing</option>
+                <option value="books">Books</option>
+            </select>
+        </div>
+
+        <div class="cart-icon">
+            🛒 <span id="cartCount">0</span>
+        </div>
+    </header>
+
+    <!-- Main Layout -->
+    <main class="container">
+
+        <!-- Product Section -->
+        <section class="products">
+            <h2>Products</h2>
+            <div id="productList" class="product-grid">
+                <!-- JS will load products here -->
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <aside class="cart">
+            <h2>Your Cart</h2>
+
+            <div id="cartItems">
+                <!-- Cart items will be rendered here -->
+            </div>
+
+            <div class="cart-summary">
+                <p>Subtotal: ₹<span id="subtotal">0</span></p>
+                <p>Tax (10%): ₹<span id="tax">0</span></p>
+                <p>Discount: ₹<span id="discount">0</span></p>
+                <hr>
+                <h3>Total: ₹<span id="total">0</span></h3>
+            </div>
+
+            <button id="checkoutBtn">Checkout</button>
+        </aside>
+
+    </main>
+
+    <!-- Template (for JS rendering) -->
+    <template id="productTemplate">
+        <div class="product-card">
+            <img src="" alt="product">
+            <h3 class="name"></h3>
+            <p class="price"></p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </template>
+
+    <template id="cartItemTemplate">
+        <div class="cart-item">
+            <span class="item-name"></span>
+            <input type="number" class="item-qty" min="1" value="1">
+            <span class="item-price"></span>
+            <button class="remove-item">Remove</button>
+        </div>
+    </template>
+
+    <!-- Scripts -->
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
